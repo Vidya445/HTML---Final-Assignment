@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: auto;
+            width: auto;
+            font-size: 15px;
+            background: linear-gradient(138deg,hsla(0, 80%, 53%, 0.4) 50%,hsla(220, 86%, 73%, 0.4) 50% ),
+             url('./images/background.jpeg');
+             background-size:cover;
+             color: rgb(0, 3, 5);
+        }
+        header{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            background-color: rgb(59, 42, 42);
+            height: 7vh;
+        }
+        .logo{
+            transform: scale(0.6);
+        }
+        .navigation{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 7vh;
+        }
+        .navigation li a{
+            text-decoration: none;
+            font-size: 16px;
+            color: rgb(238, 28, 28);
+        }
+        .navigation li a:hover{
+            color: rgb(228, 169, 19);
+            font-size:18px;
+            text-align: center;
+        }
+        .navigation li a:link{
+            color: rgb(233, 40, 40);
+            font-size: 16px;
+            text-align: center;
+        }
+        #signup{
+            visibility: visible;
+            width: auto;
+            height: auto;
+            font-style: oblique;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 93vh;  
+             }
+        fieldset{
+            padding: 14px;
+            height: fit-content;
+            width: fit-content;
+            border-radius: 7px;
+            outline-color: blueviolet;
+            border-color: rgb(194, 5, 159);
+        }
+        input[type=text],input[type=email],input[type=password],input[type=date],::-webkit-input-placeholder{
+            height: 3vh;
+            background-color: aliceblue;
+            color: rgb(22, 221, 221);
+            border-color: rgb(89, 89, 254);
+            text-decoration-color: aliceblue;
+            border-color: rgb(93, 93, 250);
+            outline-color: violet;
+            border-radius: 5px;
+            font-style: oblique;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        button{
+            font-style: oblique;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:15px;
+            text-align: justify;
+            padding: 1px 2px 2px 2px;
+            border-radius: 5px;
+            outline-color: rgb(165, 73, 250);
+            border-color: rgb(173, 95, 246);
+            color: rgb(119, 119, 246);
+            background-color: rgb(144, 243, 243);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png">
+        <ul class="navigation" type="none">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nutrition.html" target="_blank">Nutrition</a></li>
+            <li><a href="blog.html" target="_blank">Blog</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </header>
+    <div id="signup">
+<form action="index.html">
+    <fieldset>
+    <legend style="text-align: center;">Sign Up</legend>
+    <label for="name">Enter Your's Name</label><br>
+    <input type="text" placeholder="Enter Your's Name" id="name" required><br>
+    <label for="email">Enter Your's Email</label><br>
+    <input type="email" id="email" required placeholder="Enter vaild Email"><br>
+    <label for="pass">Enter Password</label><br>
+    <input type="password" id="pass" required placeholder="Enter Password"><br>
+    <label for="conp">Enter Confirm Password</label><br>
+    <input type="password" id="conp" required placeholder="Confirm Password"><br>
+    <label for="dob">Enter Date-of-Birth:</label><br>
+    <input type="date" required><br>
+    <label for="gender">Enter Your's Gender:</label><br>
+    <input type="radio" name="gender" id="male">
+    <label for="male">Male</label><br>
+    <input type="radio" name="gender" id="female">
+    <label for="female">Female</label><br>
+    <input type="radio" name="gender" id="other">
+    <label for="other" name="gender">Other</label><br><br>
+    <input type="checkbox" name="policy" id="policy" required>
+    <label for="policy">I agree on all terms and conditions</label>
+    <br><br>
+    <a href="./home.html"><button>Register</button></a>
+    <a href="#"><button>Reset</button></a>
+    <p>Or You have an account.Please <a href="login.html" target="_blank" style="color:rgba(53, 85, 244, 0.841);">Log In</a></p>
+</fieldset>
+</form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+       }
+        body{
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+           background-color: #f1ece8;
+            
+        }
+        section{
+        position:relative;
+        width: auto;
+        min-height: 100vh;
+       
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+       }
+       .top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 7vh;
+        position: sticky;
+        margin-bottom: 10px;
+        top:0;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+    }
+    .top .nav ul li a{
+        text-decoration:  none;
+        color: rgb(205, 86, 179);
+    }
+    .top .nav ul{
+        display: flex;
+    }
+   .top .nav ul li{
+        padding-right: 8px;
+    }
+    #logo{
+        transform: scale(0.6);
+        height: 4vh;
+    }
+    .top{
+        background-color: rgb(23, 9, 9);
+    }
+        .nutrients{
+           
+            margin-left: 20%;
+            margin-right: 20%;
+            text-align: justify;
+           
+        }
+        ::selection{
+            background: yellow;
+        }
+        .nimg{
+            height: 300px;
+            width: 55vw;
+            border-radius: 20px;
+            
+        }
+        h1{
+            font-size: 30px;
+             font-weight: 400;
+        color: #d65b09;
+       text-shadow: 2px 1px 2px black, 0 0 25px #BE6DB7, 0 0 5px #BE6DB7;
+       }
+        h2{
+            font-weight: 400;
+            color: #f908e5;
+       text-shadow: 2px 1px 2px rgb(172, 25, 25), 0 0 25px #7a4019, 0 0 5px #28190f;  
+        }
+      table {
+        border-collapse: collapse;
+        
+      }
+        table tr:nth-child(even){
+            background-color: aliceblue;
+        }
+        table tr:nth-child(odd){
+            background-color: rgb(154, 196, 233);
+        }
+        table tr:hover{
+            background-color: rgb(103, 151, 239);
+            color:white;
+            transform: translateY(-2px);
+            
+        }
+        .social{
+        margin-top: 13px;
+        position: absolute;
+        display: grid;
+        margin-bottom: 0px;
+        
+       }
+       .social li{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .social li a{
+        position: relative;
+        display: block;
+        text-align: left;
+        margin-right: 20px;
+        
+       }
+       #cprt{
+        color: rgb(94, 25, 206);
+       }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="top">
+            <div id="logo"><img src="./images/logo.png" alt=""></div>
+            <div class="nav">
+                <ul type="none">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    <div class="nutrients">
+    <h1>Nutrition To Add To Your Gym Diet Plan</h1>
+    <p>There are mainly three macronutrients that play a crucial role in maintaining bodily functions and even promote changes in strength and composition – they are carbs, proteins, and fats and it is essential that we consume all three macros in ample quantities to optimize progress accordingly. Let’s see what are the vital nutrients you must include in your gym diet plan for muscle gain and weight loss.</p>
+    <div class="carbo">
+        <h2>Carbohydrates</h2>
+        <img src="images/carbohy.jpg" class="nimg">
+        <p>Firstly, carbohydrates are the primary source of energy for the body and therefore play the most substantial role in fueling exercise. There are two different types of carbohydrates i.e. complex and simple. The names give an indication of the time taken to digest complex carbs that take a longer time period to digest than simple carbs.</p>
+    </div>
+    <div class="prot">
+        <h2>Protein</h2>
+        <img src="images/prot.jpg" class="nimg">
+        <p>Specifically, the majority of gym-goers will be well aware that consuming protein is important. Likewise, the reason why protein is so important is because it plays a key role in recovery and repair. A gym diet plan must include protein. During exercise, the body is exposed to strains and stresses. This cause damage to occur to the muscles at a microscopic level. So, in order to repair the damage, protein is needed. Without it, recovery periods will be extended and chronic fatigue may become a factor.</p>
+    </div>
+    <div class="fat">
+        <h2>Fats</h2>
+        <img src="images/fat.jpg" class="nimg">
+        <p>Fats are often incorrectly seen as the primary reason for fat gain. However, fats are not responsible for this and actually play a key role in the absorption and transport of nutrients. In addition, they can have a positive impact on heart health and hormone production.</p>
+    </div>
+    <div class="diet pre">
+        <h1>Gym Diet - Pre-Workout Foods</h1>
+        <img src="images/pre-work.jpg" class="nimg">
+        <p>Focus on carbohydrates as all pre-workout meals or snacks to provide the body with energy to last the full session. So, if energy levels are sub-optimal, then performance will suffer and have a consequent impact on our rate of adaptation.</p>
+        <p>Next, focus on simple carbohydrates in a gym diet plan as they take less time to digest and provide the body with energy. It may even be recommended to consume some simple carbs during a workout to maintain energy levels and performance.</p>
+        <p>For example, <i><b>white bread, jam, granola, cereal, sports drinks, and fruit are all viable options for a pre-workout, energy-boosting snack.</b></i></p>
+        <h1>Gym Diet - Post-Workout Foods</h1>
+        <p>The purpose of post-workout nutrition is two-fold, firstly, to promote muscle recovery and secondly to replenish energy. Therefore, the focus should once again be on consuming good quality protein and carb foods.</p>
+        <p>Furthermore, there is a widely held belief that protein timing is extremely important for maximizing growth. However, a number of recently based studies have indicated that total daily protein intake is of greater importance than the timing.</p>
+        <p>Therefore, High-protein foods such as <i><b>lean beef, chicken, pork, turkey, eggs, dairy, seeds, quinoa, and nuts should be prioritized. Also, protein supplements, like protein shakes and bars,</b></i>can serve as a convenient tool for effectively boosting protein intake.</p>
+    </div>
+    <div class="diet-plan">
+        <h1>Ideal 7 Day Gym Diet Chart Plan</h1>
+        <img src="images/plan.jpg" class="nimg">
+        <p>While calories and macronutrients are important, the ideal gym diet must be one that positively influences health. This is a diet that is rich in vitamins and minerals where all three macronutrients are consumed and nutrient-sparse foods are restricted.</p>
+        <p><b>Meanwhile, let’s find a 7-day gym diet plan for you:</b></p>
+      <h2>Gym Diet Plan Cart- Day 1</h2>
+       <figure class="chart-plan cp1">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Breakfast</td>
+                    <td>Oats, Banana, Pancakes with Protein Shake</td> 
+                </tr>
+                <tr>
+                    <td>Lunch</td>
+                    <td>Multigrain roti along with palak chicken <br> Avocado bell pepper salad</td>
+                </tr>
+                <tr>
+                    <td>Pre-Workout Snack</td>
+                    <td>Bananas</td>
+                </tr>
+                <tr>
+                    <td>Dinner<br>(Post-Workout)</td>
+                    <td>Brown rice<br> peas paneer curry<br>sprouts vegetable salad</td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+    <h2>Gym Diet Plan Cart- Day 2</h2>
+       <figure class="chart-plan cp2">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Breakfast</td>
+                    <td>Oatmeal with Greek Yogurt <br> Seasonal fruits Mango Juice</td> 
+                </tr>
+                <tr>
+                    <td>Lunch</td>
+                    <td>Multigrain roti<br> fish curry<br> vegetable salad</td>
+                </tr>
+                <tr>
+                    <td>Pre-Workout Snack</td>
+                    <td>Toast with Jam</td>
+                </tr>
+                <tr>
+                    <td>Dinner<br>(Post-Workout)</td>
+                    <td>Broken wheat khichidi along with carrot raita<br>egg white, and vegetable salad</td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+    <h2>Gym Diet Plan Cart- Day 3</h2>
+       <figure class="chart-plan cp3">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Breakfast</td>
+                    <td>Poached Eggs<br> whole Grain Toast<br> Protien Shake</td> 
+                </tr>
+                <tr>
+                    <td>Lunch</td>
+                    <td>Quinoa upma<br>chicken and broccoli salad</td>
+                </tr>
+                <tr>
+                    <td>Pre-Workout Snack</td>
+                    <td>Mixedd Nuts & Dried Fruits</td>
+                </tr>
+                <tr>
+                    <td>Dinner<br>(Post-Workout)</td>
+                    <td>vegetable curry<br> brown rice, cucumber raita<br> Baby Potatoes, Chocolate Milk</td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+    <h2>Gym Diet Plan Cart- Day 4</h2>
+       <figure class="chart-plan cp4">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Breakfast</td>
+                    <td>Oatmeal with Honey Apple Juice</td> 
+                </tr>
+                <tr>
+                    <td>Lunch</td>
+                    <td>Grilled Chicken<br> Salad, Whole Grain Bread</td>
+                </tr>
+                <tr>
+                    <td>Pre-Workout Snack</td>
+                    <td>Toast with Peanut Butter</td>
+                </tr>
+                <tr>
+                    <td>Dinner<br>(Post-Workout)</td>
+                    <td>Mwthi Chicken, Brown Rice<br> Broccoli<br>Protein Shake</td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+    <h2>Gym Diet Plan Cart- Day 5</h2>
+       <figure class="chart-plan cp5">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Breakfast</td>
+                    <td>Scrambled Egg<br>Whole Grain Toast<br> Smoothie</td> 
+                </tr>
+                <tr>
+                    <td>Lunch</td>
+                    <td>Grilled chicken<br>Vegetable roti roll, Green Salad</td>
+                </tr>
+                <tr>
+                    <td>Pre-Workout Snack</td>
+                    <td>Mixed Nuts & Dried Fruits</td>
+                </tr>
+                <tr>
+                    <td>Dinner<br>(Post-Workout)</td>
+                    <td>Chicken Stir Fry, Spring Onion<br> Peppers & Broccoli<br> Chocolate Milk</td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+    <h2>Gym Diet Plan Cart- Day 6</h2>
+       <figure class="chart-plan cp6">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Breakfast</td>
+                    <td>Oatmeal<br> Whole Grain Toast<br>Oranje Juice</td> 
+                </tr>
+                <tr>
+                    <td>Lunch</td>
+                    <td>Whole Grain Chicken wrap<br> Black Beans, Peppers & Greek Yoguri</td>
+                </tr>
+                <tr>
+                    <td>Pre-Workout Snack</td>
+                    <td>Apple with peanut butter</td>
+                </tr>
+                <tr>
+                    <td>Dinner<br>(Post-Workout)</td>
+                    <td>Keema Bhurji and multigrain roti<br> Sweet Potato<br>Protein Shake</td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+    <h2>Gym Diet Plan Cart- Day 7</h2>
+       <figure class="chart-plan cp6">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Breakfast</td>
+                    <td>Oatmeal with Nuts Smothie</td> 
+                </tr>
+                <tr>
+                    <td>Lunch</td>
+                    <td>Whole wheat pasta with with chicken and green salad</td>
+                </tr>
+                <tr>
+                    <td>Pre-Workout Snack</td>
+                    <td>Granola or Cereal</td>
+                </tr>
+                <tr>
+                    <td>Dinner<br>(Post-Workout)</td>
+                    <td>Fish curry<br> Boiled green peas salad<br> Brown Rice, Garden Peas, Milk</td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+    </div>
+    <p>On the whole, the above guide will prove to be useful, yet be aware that when it comes to nutrition, everyone is different. Not only will physical attributes determine your nutritional requirements, the goals that you have set will also influence your diet.</p>
+    <p>Two goals that are extremely common are fat loss and muscle growth. So, in order to lose fat, calories must be restricted which will cause stored body fat to be broken down. On the other hand, as for muscle growth, calorie intake must be increased to build significant muscle size as additional calories are required to accelerate the recovery process. A gym diet plan must be a combination of micro and macro nutrients.</p>
+    <h1>Foods to Avoid in Your Gym Diet Plan</h1>
+    <img src="images/junk-food.jpg" class="nimg">
+    <p>The following three foods should be avoided or limited as far as possible.</p>
+    <p> Trans fats are a type of dietary fat that has consistently been shown to impact health. While trans fats do naturally occur in small quantities, artificial trans fats are notoriously hazardous. Artificial trans fats can be found in baked goods, fast food, and many snack foods.</p>
+    <p>Similarly, many simple carbohydrate foods do not have great nutritional value and contain a high amount of sugar. While they may be useful for a short term energy boost, consuming a large number of simple carbs can be detrimental.</p>
+    <p>Although technically not a food, alcohol is a substance that should also be limited as far as possible. Since there is much research to indicate that alcohol negatively impacts recovery and may even interfere with the muscle-building process, it might be good to stay away from it. So, it is not great to include it when you are detoxifying with your gym diet plan.</p>
+</div>
+<footer>
+    <ul class="social">
+        <li>
+    <a href="https://www.instagram.com/bodyexercise_tips/" target="_blank"><img src="images/instagram_icon.png" width="20px" height="20px" style="position: left;"></a>
+    <a href="https://www.youtube.com"><img src="./images/youtube.jpg" height="20px" width="20px" alt="youtube"></a>
+    <a href="htttps://www.facebook.com"><img src="./images/facebook.jpeg" width="20px" height="20px" alt="facebook"></a>
+    </li>
+        
+        <li id="cprt">&copy; Copyright-2023</li>
+    </ul>
+    </footer>
+</section>
+</body>
+</html>

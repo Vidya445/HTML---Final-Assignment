@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            background-color: rgb(59, 42, 42);
+            height: 7vh;
+        }
+        .logo{
+            transform: scale(0.6);
+        }
+        .navigation{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 7vh;
+        }
+        .navigation li a{
+            text-decoration: none;
+            font-size: 16px;
+            color: rgb(238, 28, 28);
+        }
+        .navigation li a:hover{
+            color: rgb(228, 169, 19);
+            font-size:18px;
+            text-align: center;
+        }
+        .navigation li a:link{
+            color: rgb(233, 40, 40);
+            font-size: 16px;
+            text-align: center;
+        }
+        body{
+            height: 100%;
+            width: auto;
+            font-size: 15px;
+            background: linear-gradient(138deg,hsla(0, 80%, 53%, 0.4) 50%,hsla(325, 99%, 68%, 0.4) 50% ),url('./images/background.jpeg');
+            background-size: cover;
+            font-style: oblique;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(0, 3, 5);
+             
+        }
+        #login{
+            position: relative;
+            width: auto;
+            height: auto;
+            visibility: visible;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 93vh;  
+             }
+        fieldset{
+            display: inline-block;
+            height: fit-content;
+            width: fit-content;
+            padding: 20px 20px 20px 30px;
+            border-radius: 7px;
+            border-color: rgb(233, 22, 22);
+        }
+
+        input[type=email],input[type=password],::-webkit-input-placeholder{
+            height: 3vh;
+            width: 20vw;
+            word-spacing: 3px;
+            background-color: aliceblue;
+            color: rgb(22, 221, 221);
+            border-color: rgb(89, 89, 254);
+            text-decoration-color: aliceblue;
+            border-color: rgb(93, 93, 250);
+            outline-color: violet;
+            border-radius: 5px;
+            font-style: oblique;
+            margin-top: 3px;
+            margin-bottom: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        button{
+            font-style: oblique;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:15px;
+            text-align: justify;
+            padding: 1px 2px 2px 2px;
+            border-radius: 5px;
+            outline-color: rgb(165, 73, 250);
+            border-color: rgb(173, 95, 246);
+            color: rgb(119, 119, 246);
+            background-color: rgb(144, 243, 243);
+        }
+        fieldset>p{
+            padding-top: 13px;
+        }
+        p a{
+            text-decoration: underline !important;
+            color: rgba(37, 37, 249,1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png">
+        <ul class="navigation" type="none">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nutrition.html" target="_blank">Nutrition</a></li>
+            <li><a href="blog.html" target="_blank">Blog</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </header>
+    <div id="login">
+        <form action="index.html">
+            <fieldset style="line-height: 10px;word-spacing: 2px;margin-top: 4px;"> 
+                <legend>Log In</legend>
+                <label for="email">Enter Email</label><br>
+                <input type="email" id="email" placeholder="  Enter Vaild Email"><br>
+              <label for="pass">Enter Password</label><br>
+                <input type="password" id="pass" placeholder="  Enter Password"><br><br>
+                <a href="index.html"><button style="width: 7vw;text-align: center;">Login</button></a>
+                <p>if you haven't any account Please. <a href="signUp.html" style="text-decoration: none;font-size: 16px;font-weight: 400;">Register</a></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
